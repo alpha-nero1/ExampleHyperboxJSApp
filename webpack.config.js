@@ -9,7 +9,7 @@ module.exports = {
   mode: 'development',
   entry: [
     './src/index.ts',
-    './src/index.css'
+    './src/index.less'
   ],
   resolve: {
     modules: [
@@ -59,10 +59,24 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /.less$/i,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "less-loader",
+          }
+        ]
+      },
+      {
         test: /.css$/,
         use: [
           {
-            loader: "style-loader"
+            loader: "style-loader",
           },
           {
             loader: "css-loader",
