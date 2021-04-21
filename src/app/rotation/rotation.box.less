@@ -7,15 +7,19 @@ rotation-box {
 }
 
 .rotation-box-text {
-  animation: spinning 2s infinite;
+  animation: spinning 2.6s infinite;
 	transform-origin: center;
 	text-align: center;
   font-size: 2rem;
 }
 
 @-moz-keyframes spinning {
-  from { -moz-transform: scale( 1 ) rotate( 0deg );   }
-  to   { -moz-transform: scale( 1 ) rotate( 360deg ); }
+  from { 
+    -moz-transform: scale( 1 ) rotate( 0deg );
+  }
+  to   { 
+    -moz-transform: scale( 1 ) rotate( 360deg ); 
+  }
 }
 
 @keyframes spinning {

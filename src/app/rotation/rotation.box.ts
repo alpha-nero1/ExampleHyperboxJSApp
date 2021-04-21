@@ -1,4 +1,4 @@
-import { Box } from 'hyperbox-js';
+import { Box, BoxOnDisplayed } from 'hyperbox-js';
 import './rotation.box.less';
 
 export class RotationBox extends Box {

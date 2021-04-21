@@ -1,0 +1,17 @@
+.main-text-button {
+  color: @primary;
+  background-color: transparent;
+  padding: 0.4rem;
+  border: none;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+    color: lighten(@primary, 15%);
+  }
+}
+
+.main-text-button-lg {
+  .main-text-button();
+  font-size: 20px;
+}
